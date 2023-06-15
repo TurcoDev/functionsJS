@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funciones</title>
+</head>
+<body>
+  <h1>Funciones y Condicionales</h1>
+  <button onclick="funcionalidadBoton()">Reproducir</button>
+  <button onclick="parar()">Parar</button>
+  <audio src="sounds/Faded.mp3" id="sonido"></audio>
+  <script>
+    const reproducir = () => {
+      document.getElementById('sonido').play();
+    }
+
+    const parar = () => {
+      document.getElementById('sonido').pause();
+    }
+
+    function funcionalidadBoton() {
+      reproducir();
+      console.log("Se apreto el boton");
+    }
+  </script>
+  <script src="js/codigo.js"></script>
+
+</body>
+</html>
